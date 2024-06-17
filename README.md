@@ -1,2 +1,2 @@
 # AmazingEvents-Bernardo-Rodriguez
-entrega de sprint 3
+sprint 3
