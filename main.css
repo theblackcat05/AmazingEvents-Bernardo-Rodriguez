@@ -53,3 +53,14 @@ footer img{
     width: 35px;
     margin-left: 5px;
 }
+
+.size{
+    width: 18rem;
+    height: 50%;
+}
+
+.card{
+height: 50%;
+margin: 2rem;
+
+}
