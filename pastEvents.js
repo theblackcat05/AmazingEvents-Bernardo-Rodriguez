@@ -211,7 +211,7 @@ function pintarTarjetas(events) {
         <img src = ${eventos.image} class ="card-img-top h-50" alt=${eventos.category}>
       <div class="card-body">
         <h5 class="card-title">${eventos.name}
-        </h5><p class="card-text"> ${eventos.description}> 
+        </h5><p class="card-text"> ${eventos.description} 
         <a href="./details.html" class="btn btn-danger">Details</a>
       </div >
     </div > `
