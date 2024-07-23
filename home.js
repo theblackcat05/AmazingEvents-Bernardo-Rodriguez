@@ -220,3 +220,50 @@ function pintarTarjetas(events) {
 }
 pintarTarjetas(data.events)
 
+function pintarCheckBox(events) {
+   let contenedorcheck = document.getElementById("contenedorCheckbox")
+
+   for (let i = 0; i < events.length; i++) {
+    let eventosCheck = events[i]
+    let checkBox = document.createElement('div')
+
+    checkBox.className = "container-fluid"
+
+    checkBox.innerHTML = `<ul class="list-group w-0 p-3">
+                <li class="list-group-item">
+                    <input class="form-check-input me-1 col" type="checkbox" value="" id="firstCheckbox">
+                    <label class="form-check-label" for="firstCheckbox">${eventosCheck.category}</label>
+                </li>
+            </ul>`
+
+      contenedorcheck.appendChild(checkBox)
+   }
+}
+pintarCheckBox(data.events)
+
+
+/*
+function marcarRealizada(id) {
+  let i = data.findIndex(data=>data.id===id)
+  eventosCheck[i].realizada = !eventosCheck[i].realizada
+  pintarCheckBox(eventosCheck,contenedorCheck)
+}
+marcarRealizada(id)
+
+function filtrarPorRealizada(eventosCheck) {
+  if (filterCheck.checked) {
+    return eventosCheck.filter(data=>data.realizada)
+  }
+  return data
+}
+
+filterCheck.addEventListener("click",()=>{
+  let checkFiltrados = filterCheck(eventosCheck)
+  checkFiltrados = filterCheck(checkFiltrados, filterTexto.value.toLowerCase())
+  pintarCheckBox(checkFiltrados,contenedorCheck)
+})
+
+
+function filtrarPorTexto(notas,searchText) {
+  let notasFiltradas = notas.filter(nota=>nota.titulo.toLowerCase().includes(searchText))}
+  */
